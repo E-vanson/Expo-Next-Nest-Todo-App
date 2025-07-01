@@ -15,7 +15,7 @@ export class TodoRouter{
         output: todoSchema
     })
     getToDoById(@Input('id') id:string){
-        return this.todoService.getToDoById(id);
+        return this.todoService.getTodoById(id);
     }
 
     @Query({
